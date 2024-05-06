@@ -1,0 +1,53 @@
+@use "global" as *;
+
+// Top.tsx
+.pickup {
+  padding: 20px 20px 40px;
+
+  h3 {
+    margin-bottom: 10px;
+    font-size: $global_font_size_extra-large;
+    font-weight: bold;
+  }
+
+  .pickup-list {
+    margin: 0 10px;
+
+    li {
+      @extend %list-style;
+    }
+  }
+}
+
+%list-style {
+  div {
+    img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+  }
+
+  dl {
+    padding: 10px 0;
+    line-height: 1.5em;
+
+    dt {
+      font-size: $global_font_size_normal;
+
+      span {
+        display: block;
+        font-size: $global_font_size_small;
+        color: #9e9e9e;
+      }
+    }
+
+    dd {
+      display: -webkit-box;
+      overflow: hidden;
+      font-size: $global_font_size_normal;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+}

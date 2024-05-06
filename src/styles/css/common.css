@@ -1,0 +1,52 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Arial,
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 1.4rem;
+  color: #212121;
+}
+
+@media screen and (width >= 768px) {
+  .scroll-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .scroll-wrapper .scroll-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/background.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+  }
+
+  .scroll-wrapper .scroll-bg span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 255 255 / 70%);
+  }
+
+  .scroll-wrapper .scroll-container .main-contents {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 460px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 5px 30px 0 rgb(0 0 0 / 20%);
+  }
+}
+
+@media screen and (width <= 767px) {
+  .scroll-wrapper {
+    width: 100%;
+  }
+}

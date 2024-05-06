@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.heading {
+  padding: 20px 20px 0;
+
+  h2 {
+    margin-bottom: 10px;
+    font-size: $global_font_size_extra_large;
+    font-weight: bold;
+  }
+
+  p {
+    margin: 0 10px;
+    font-size: $global_font_size_normal;
+    line-height: 1.5em;
+  }
+}

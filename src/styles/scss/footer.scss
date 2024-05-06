@@ -1,0 +1,29 @@
+@use "global" as *;
+
+footer {
+  $footer_text_color: $base_color_white;
+  $footer_bg_color: $base_color_gray;
+
+  div {
+    width: 100%;
+    padding: 20px 20px 10px;
+    color: $footer_text_color;
+    background-color: $footer_bg_color;
+
+    // Footer内で読み込んだNavigationコンポーネントの見栄えを定義。
+    nav {
+      ul {
+        li {
+          line-height: 2em;
+        }
+      }
+    }
+
+    small {
+      display: block;
+      padding-top: 20px;
+      font-size: $global_font_size_small;
+      text-align: center;
+    }
+  }
+}

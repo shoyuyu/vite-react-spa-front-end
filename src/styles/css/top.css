@@ -1,0 +1,42 @@
+.pickup {
+  padding: 20px 20px 40px;
+}
+
+.pickup h3 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.pickup .pickup-list {
+  margin: 0 10px;
+}
+
+.pickup .pickup-list li div img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.pickup .pickup-list li dl {
+  padding: 10px 0;
+  line-height: 1.5em;
+}
+
+.pickup .pickup-list li dl dt {
+  font-size: 1.4rem;
+}
+
+.pickup .pickup-list li dl dt span {
+  display: block;
+  font-size: 1.2rem;
+  color: #9e9e9e;
+}
+
+.pickup .pickup-list li dl dd {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 1.4rem;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

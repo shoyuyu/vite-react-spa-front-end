@@ -1,0 +1,15 @@
+@use "size" as *;
+
+// Media query for only sp
+@mixin media-query-sp($max-breakpoint: $media_query_sp) {
+  @media screen and (max-width: $max-breakpoint) {
+    @content;
+  }
+}
+
+// Media query for pc
+@mixin media-query-pc($min-breakpoint: $media_query_pc) {
+  @media screen and (min-width: $min-breakpoint) {
+    @content;
+  }
+}

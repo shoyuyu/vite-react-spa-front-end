@@ -1,0 +1,15 @@
+.vscode
+node_modules/
+public/
+.eslintrc.cjs
+.gitignore
+.prettierignore
+.prettierrc.json
+.stylelintrc.json
+package-lock.json
+package.json
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+.nvmrc
+*.md

@@ -1,0 +1,62 @@
+@use "global" as *;
+
+// Initialize
+html {
+  font-size: $base_font_size;
+}
+
+body {
+  font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Arial,
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: $global_font_size_normal;
+  color: $global_text_color;
+}
+
+// Layout
+@include media-query-pc {
+  .scroll-wrapper {
+    position: relative;
+    width: 100%;
+
+    .scroll-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("/background.png");
+      background-repeat: repeat-y;
+      background-size: cover;
+
+      span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255 255 255 / 70%);
+      }
+    }
+
+    .scroll-container {
+      $main_contents_width: 460px;
+      $main_contents_box_shadow: 0 5px 30px 0 rgb(0 0 0 / 20%);
+      $main_contents_bg_color: $base_color_white;
+
+      .main-contents {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: $main_contents_width;
+        margin: 0 auto;
+        overflow: hidden;
+        background-color: $main_contents_bg_color;
+        box-shadow: $main_contents_box_shadow;
+      }
+    }
+  }
+}
+
+@include media-query-sp {
+  .scroll-wrapper {
+    width: 100%;
+  }
+}
